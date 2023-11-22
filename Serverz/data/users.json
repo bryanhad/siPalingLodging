@@ -1,0 +1,18 @@
+[
+    {
+        "username": "bryanhad22",
+        "email": "bryanhadinata76@gmail.com",
+        "password": "bryanhad22",
+        "role": "admin",
+        "phoneNumber": "085217175656",
+        "address": "Planet Bekasi"
+    },
+    {
+        "username": "asepGanteng",
+        "email": "asepGanteng@gmail.com",
+        "password": "asepGanteng",
+        "role": "staff",
+        "phoneNumber": "082727595912",
+        "address": "Planet Merkurius"
+    }
+]

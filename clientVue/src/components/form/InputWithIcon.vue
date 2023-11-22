@@ -1,0 +1,32 @@
+<script>
+import { Icon } from '@iconify/vue';
+
+export default {
+    props: ['id', 'icon', 'placeholder', 'type', 'required', 'error', 'errorShake', 'value'],
+    emits: ['input'],
+    components: {
+        Icon
+    }
+}
+</script>
+
+<template lang="">
+    <div class='flex flex-col gap-2'>
+        <div class="flex border-b-2 relative">
+            <span v-if="required" class='absolute right-0 top-0 text-red-400'>*</span>
+            <label :for='id' class="cursor-pointer grid place-content-center pl-1 pr-3 py-2 text-gray-300">
+                <Icon :icon='icon' class='text-2xl'/>
+            </label>
+            <input 
+                :placeholder='placeholder'
+                :id='id'
+                :name='id'
+                class="hover:outline-none outline-none text-slate-400 w-full"
+                :type='type'
+                :value='value'
+                @input='(e) => $emit(`input`, e.target.value)'
+            >
+        </div>
+        <p v-if="error" class='text-red-400 text-sm' :class="errorShake && 'errorShake'">{{ error.message }}</p>
+    </div>
+</template>

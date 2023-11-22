@@ -1,0 +1,18 @@
+[
+    {
+        "CustomerId": 1,
+        "LodgingId": 1
+    },
+    {
+        "CustomerId": 1,
+        "LodgingId": 2
+    },
+    {
+        "CustomerId": 2,
+        "LodgingId": 3
+    },
+    {
+        "CustomerId": 2,
+        "LodgingId": 1
+    }
+]
